@@ -504,11 +504,11 @@ body.nav-active {
   padding-inline-end: 5px;
 }
 
-.hero-banner {
+.hero-ban {
   position: relative;
 }
 
-.hero-banner .w-100 {
+.hero-ban .w-100 {
   max-width: max-content;
   margin-inline: auto;
 }
