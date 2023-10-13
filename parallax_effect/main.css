@@ -10,6 +10,8 @@
   overflow-y: auto;
   overflow-x: hidden;
   perspective: 10px;
+  
+  background-color: rgb(39, 33, 33);
 }
 
 .container {
@@ -57,20 +59,23 @@ h2 {
 }
 
 section {
-  background-color: rgb(45, 45, 45);
+  background-color:rgb(39, 33, 33);
   color: white;
-  padding: 5rem 0;
 }
-
+#section1{
+  padding:3rem 0;
+}
 .secHeading {
-  font-size: 5 rem;
-  padding: 0 10rem;
+  font-size: 5rem;
+  color:rgb(193, 193, 45);
+  text-decoration: underline;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .text {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1.5rem;
-  padding: 0 10rem;
-  margin: 5rem 0;
+  margin: 3rem 5rem;
 }
 
 .bg {
@@ -84,39 +89,40 @@ section {
 
 .desc {
   position: absolute;
-  background-color: white;
+  background-color:rgb(39, 33, 33);
   padding: 0.5rem 2.5rem;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  color: black;
-  font-size: 3.5rem;
-  font-weight: 600;
+  color: whitesmoke;
+  font-size: 3rem;
+  font-weight: 500;
+  border-radius: 10rem;
 }
 
 .desc p {
   font-size: 3.5rem;
-  color: black;
+  background-color:rgb(39, 33, 33);
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .bg1 {
-  background-image: url(/parallax_effect/assets/rr2.jpg);
+  background-image: url("assets/rr2.jpg");
 }
 .bg2 {
-  background-image: url(/parallax_effect/assets/robot.png);
+  background-image: url(assets/robot.png);
 }
 .bg3 {
-  background-image: url(/parallax_effect/assets/truman.jpg);
+  background-image: url(assets/truman.jpg);
 }
 .bg4 {
-  background-image: url(/parallax_effect/assets/angry.png);
+  background-image: url(assets/angry.png);
 }
 .bg5 {
-  background-image: url(/parallax_effect/assets/bojack2.jpg);
+  background-image: url(assets/bojack2.jpg);
 }
-
+/*Navbar styling*/
 .nav-container{
   background-color: black;
   height:50px;
