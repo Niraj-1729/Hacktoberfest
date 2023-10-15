@@ -5,8 +5,8 @@ This is an open-source repository that gathers a variety of projects across diff
 ## INSTRUCTION-
 
 - **Star this repository.**
-- Fork this Repository using the button at the top on the right corner.
-- Clone your forked repository to your PC ( git clone "url from clone option.)
+- Fork this Repository using the button at the top in the right corner.
+- Clone your forked repository to your PC ( git clone "URL" from clone option.)
 - Create a new branch for your modifications (ie. `git branch new-user` and check it out `git checkout new-user` or simply do `git checkout -b new-user`)
 - Add your files (`git add -A`), commit (`git commit -m "added myself"`), and push (`git push origin new-user`)
 - Create a pull request.
@@ -33,14 +33,14 @@ This is an open-source repository that gathers a variety of projects across diff
 
 👉 Click on 'Create a Pull Request.'
 
-👉 Include some SCREENSHOTS/GIF or a link to your working project in the description. ❗Important❗.
+👉 Include some SCREENSHOTS/GIFs or a link to your working project in the description. ❗Important❗.
 
 👉 Submit the PR.
 
 👉 Give a ⭐ to the repository and FOLLOW me if you appreciate the project.
 
 ### What You Can Contribute
-We welcome contributions from the community to enrich and broaden our collection of mini projects in various programming languages. Here are multiple ways you can contribute:
+We welcome contributions from the community to enrich and broaden our collection of mini-projects in various programming languages. Here are multiple ways you can contribute:
 
 👉 **Add New Projects**
 
@@ -57,7 +57,7 @@ Have an idea for a new project? Create a new issue by clicking the 'New Issue' b
 ## We're delighted to incorporate impressive portfolios into this repository!
 
 ## Usage
-This repository comprises a compilation of mini projects in various programming languages, each designed to showcase a specific concept or feature. Here's how you can make use of these projects:
+This repository comprises a compilation of mini-projects in various programming languages, each designed to showcase a specific concept or feature. Here's how you can make use of these projects:
 
 👉 **Select a Project**
 
