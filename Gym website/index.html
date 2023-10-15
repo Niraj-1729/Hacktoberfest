@@ -6,20 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aditya Fitness</title>
-
 </head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 <style>
     /* CSS Reset */
+    * {
+        outline: none;
+    }
+
     body {
-        font-family: 'Cabin', sans-serif;
-        margin: 0px;
-        padding: 0px;
-        color: white;
-        background: url("img/bg.jpg");
-        /* background-repeat:no-repeat; */
+        background: url('./img/bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+
+    /* Navbar CSS */
+    .navbar-toggler {
+        background-color: white !important;
+    }
+
+
+    .nav-item {
+        font-size: 1.2em;
+    }
+
+    .nav-item p {
+        margin: 0;
+        background-color: white;
+        height: 2px;
+        width: 0%;
+    }
+
+    .navbar-nav li:hover p {
+        animation: animates 1s ease forwards;
+    }
+
+    @keyframes animates {
+        100% {
+            width: 100%;
+        }
     }
 
     .left {
@@ -50,32 +81,13 @@
 
     }
 
-    .navbar {
-        display: inline-block;
-    }
 
-    .navbar li {
-        display: inline-block;
-        font-size: 70px;
-    }
-
-    .navbar li a {
-        color:white;
-        text-decoration: none;
-        padding: 40px 45px;
-    }
-
-    .navbar li a:hover,
-    .navbar li a.active {
-        color: red;
-        /* text-decoration:underline; */
-    }
 
     .left img {
         position: static;
         top: 50px;
         left: 60px;
-        width: 412px;
+        width: 6em;
     }
 
     .left div {
@@ -101,18 +113,6 @@
         color: grey;
     }
 
-    .container {
-        /* border: 2px solid orange; */
-        margin: 743px 391px;
-        padding: 200px 38px;
-        width: 30%;
-        border-radius: 30px;
-    }
-
-    .container {
-        font-size: 60px;
-    }
-
     .formgroup input {
         display: block;
         text-align: center;
@@ -122,10 +122,9 @@
         padding: 50px 10px;
         border-radius: 20px;
         font-family: 'Cabin', sans-serif;
-        
-
     }
-    .formgroup button{
+
+    .formgroup button {
         text-align: center;
         font-size: 50px;
         font-family: 'Cabin', sans-serif;
@@ -135,64 +134,372 @@
         padding: 23px 10px;
         cursor: pointer;
         color: black;
-        
-
-        
     }
+
+    .main-container {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Media Queries */
+    @media (max-width : 991px) {
+        .nav-item li:hover p {
+            animation: none;
+        }
+
+        .nav-item a {
+            text-align: center;
+        }
+
+        .navbar-nav a {
+            background-color: black;
+        }
+
+        .navbar .container {
+            padding: 0;
+        }
+
+        .navbar-brand {
+            padding-left: 5%;
+        }
+
+        .navbar .container .navbar-toggler {
+            margin-right: 5% !important;
+        }
+
+        .main-container {
+            padding: 5%;
+        }
+
+        .form-container {
+            margin-bottom: 30% !important;
+        }
+
+        .text-box {
+            position: relative;
+            left: -15%;
+        }
+    }
+
+
+
+    /* Form styling */
+
+    .form-container {
+        margin-bottom: 10%;
+        max-width: 800px;
+        background: #fff;
+        width: 800px;
+        padding: 25px 40px 10px 40px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container .text {
+        text-align: center;
+        font-size: 41px;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        background: -webkit-linear-gradient(right, black, #341c24, #b73b34, #fe6352);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .form-container form {
+        padding: 30px 0 0 0;
+    }
+
+    .form-container form .form-row {
+        display: flex;
+        margin: 32px 0;
+    }
+
+    form .form-row .input-data {
+        width: 100%;
+        height: 40px;
+        margin: 0 20px;
+        position: relative;
+    }
+
+    form .form-row .textarea {
+        height: 70px;
+    }
+
+    .input-data input,
+    .textarea textarea {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: none;
+        font-size: 17px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+    }
+
+    .input-data input:focus~label,
+    .textarea textarea:focus~label,
+    .input-data input:valid~label,
+    .textarea textarea:valid~label {
+        transform: translateY(-20px);
+        font-size: 14px;
+        color: #3498db;
+    }
+
+    .textarea textarea {
+        resize: none;
+        padding-top: 10px;
+    }
+
+    .input-data label {
+        position: absolute;
+        pointer-events: none;
+        bottom: 10px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+    }
+
+    .textarea label {
+        width: 100%;
+        bottom: 40px;
+        background: #fff;
+    }
+
+    .input-data .underline {
+        position: absolute;
+        bottom: 0;
+        height: 2px;
+        width: 100%;
+    }
+
+    .input-data .underline:before {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 100%;
+        background: #1e6b9e;
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 0.3s ease;
+    }
+
+    .input-data input:focus~.underline:before,
+    .input-data input:valid~.underline:before,
+    .textarea textarea:focus~.underline:before,
+    .textarea textarea:valid~.underline:before {
+        transform: scale(1);
+    }
+
+
+    @media (max-width: 700px) {
+        .form-container .text {
+            font-size: 30px;
+        }
+
+        .form-container form {
+            padding: 10px 0 0 0;
+        }
+
+        .form-container form .form-row {
+            display: block;
+        }
+
+        form .form-row .input-data {
+            margin: 35px 0 !important;
+        }
+
+    }
+
+    @media (min-width : 550px) and (max-width : 991px) {
+        .text-box a {
+            position: relative;
+            left: 45% !important;
+        }
+    }
+
+    @media (max-width: 549px) {
+        .text-box a {
+            position: relative;
+            left: 23% !important;
+        }
+    }
+
+    /* Form styling ends here */
+
+    /* Button Styling */
+    .text-box {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .text-box a {
+        font-size: 12px;
+        text-align: center;
+        position: relative;
+        left: 30%;
+    }
+
+    .btn:link,
+    .btn:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+
+        display: inline-block;
+        border-radius: 100px;
+        transition: all .2s;
+        position: absolute;
+    }
+
+    .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-white {
+        background-color: #fff;
+        color: #ff6c58;
+    }
+
+    .btn::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+
+    .btn-white::after {
+        background-color: #fff;
+    }
+
+    .btn:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+    }
+
+    .btn-animated {
+        animation: moveInBottom 5s ease-out;
+        animation-fill-mode: backwards;
+    }
+
+    @keyframes moveInBottom {
+        0% {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    /* Button Styling ends here */
 </style>
 
 <body>
-    <header class="header">
-        <!-- Left box for logo -->
-        <div class="left">
-            <img src="img/logo1.png" alt="">
-            <div>HEALTH IS WEALTH</div>
 
-
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/logo1.png" alt="" width="50px" height="50px"
+                    style="border-radius: 10px;"></a>
+            <button id="collapse-button" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" href="#">Home<p></p></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Subscription Plans<p></p></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Contact<p></p></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light">About<p></p></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <!-- Mid box for navigation bar -->
-        <div class="mid">
-            <ul class="navbar">
-                <li><a href="" class="active">Home</a></li>
-                <li><a href="">Gym Subscription Plans</a></li>
-                <li><a href="">Contact Info</a></li>
-                <li><a href="">About Us</a></li>
-            </ul>
+    </nav>
 
-
+    <div class="main-container">
+        <div class="form-container">
+            <div class="text">
+                Contact us Form
+            </div>
+            <form action="#">
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">First Name</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Last Name</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Age</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Gender</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Phone Number</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" required>
+                        <div class="underline"></div>
+                        <label for="">Email Address</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-data textarea">
+                        <textarea rows="8" cols="80" required></textarea>
+                        <br />
+                        <div class="underline"></div>
+                        <label for="">Write your message</label>
+                        <br />
+                        <div class="text-box">
+                            <a href="#" class="btn btn-white btn-animate">Submit</a>
+                        </div>
+            </form>
         </div>
-        <!-- Right box for button -->
-        <div class="right">
-            <button class="btn">Email Us</button>
 
-        </div>
-    </header>
-    <div class="container">
-        <h1>Join the best Gym of Kolhapur now!</h1>
-        <form action="noaction.php">
-            <div class="formgroup">
-                <input type="text" name="" placeholder="Enter your Name">
-            </div>
-            <div class="formgroup">
-                <input type="text" name="" placeholder="Enter your Age">
-            </div>
-            <div class="formgroup">
-                <input type="text" name="" placeholder="Enter your Gender">
-            </div>
-            <div class="formgroup">
-                <input type="text" name="" placeholder="Enter your Phone No">
-            </div>
-            <div class="formgroup">
-                <input type="text" name="" placeholder="Enter your Email">
-            </div>
-            <div class="formgroup">
-                <button class="but">SUBMIT</button>
 
-            </div>
-            
-        </form>
+
     </div>
 
+    <!-- Importing Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
