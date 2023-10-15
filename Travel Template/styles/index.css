@@ -1,0 +1,343 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+.Home-back-image-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('../assets/boat_harbor_sea.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: red;
+    object-fit: cover;
+}
+
+.Nav-bar-container a {
+    text-decoration: none;
+    color: white;
+}
+
+.Nav-bar-container {
+    display: flex;
+    height: 80px;
+    flex-direction: row;
+    background-color: transparent;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.Nav-bar-Logo-Name {
+    font-size: large;
+    margin-left: 7%;
+}
+
+.Nav-bar-container ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-left: -25%;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.Nav-bar-container li {
+    font-size: large;
+    padding: 10px;
+
+}
+
+.Nav-bar-list-ul a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    letter-spacing: 0.5px;
+
+}
+#welcome{
+    list-style: none;
+
+}
+#welcome::after{
+    content: '';
+    position: absolute;
+    background-color: transparent;
+    height: 3px;
+    width: 0%;
+    left: 0px;
+    bottom: -10px;
+    transition: 0.5s;
+    border-radius: 10%;
+
+}
+
+.Nav-bar-list-ul a::after {
+    content: '';
+    position: absolute;
+    background-color: aliceblue;
+    height: 3px;
+    width: 0%;
+    left: 0px;
+    bottom: -10px;
+    transition: 0.5s;
+    border-radius: 10%;
+}
+
+.Nav-bar-list-ul a:hover::after {
+    width: 100%;
+}
+
+.text-class-home {
+    position: relative;
+    top: 25%;   
+    width: auto;
+}
+.child-one-text-class {
+    width: 30%;
+    font-size: 18px;
+    padding-left: 3px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    left: 15%;
+    margin-bottom: 5px;
+}
+.Welcome-text-for-home {
+    width: 25%;
+    position: relative;
+    left: 15%;
+    font-size: 45px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.button-explore-home {
+    background-color: green;
+    padding: 15px 40px;
+    width: fit-content;
+    position: relative;
+    cursor: pointer;
+    align-items: center;
+    left: 15%;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    
+}
+
+
+.footer-main-container {
+    z-index: inherit;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    padding-bottom: 60px;
+    padding-top: 30px;
+    
+    
+}
+
+.footer-left-body-icons {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 20%;
+    margin-right: 40px;
+
+}
+
+.grid-item {
+    font-size: 16px;
+    width: 100px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.grid-item-long {
+    font-size: 16px;
+    width: 130px;
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+
+.footer-right-body-grid {
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+    padding-right: 40px;
+    
+}
+
+
+.grid-item-header {
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-travel-container {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: rgb(57, 208, 57);
+}
+
+.footer-travel-container-des {
+    width: 80%;
+   margin-bottom: 10px;
+}
+
+.footer-left-icons-social {
+    font-size: 20px;
+    margin-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    justify-content: space-around;
+    
+}
+
+.footer-two-right {
+    margin-left: 20%;
+    margin-right: 20%;
+    cursor: pointer;
+}
+#socialicons {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#socialicons2 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#socialicons3{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer-one-right {
+    margin-left: 20%;
+    cursor: pointer;
+    margin-right: 20%;
+}
+
+.footer-three-right {
+    margin-left: 20%;
+    cursor: pointer;
+    margin-right: 20%;
+}
+.mobile-bar {
+    background-color: transparent;
+    padding: 10px;
+    
+}
+
+.mobile-icon {
+    display: none;
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+/* Mobbile Nav O n Click Items */
+.drop-down-menu-parent{
+    display: none;
+    position:absolute;
+    right: 2rem;
+    top: 80px;
+    height: 0;
+    width: 200px;
+    background-color: rgba(255, 255,255,0.1);
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+    border-radius: 13px;
+    transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+ .open {
+    height: 200px;
+}
+
+.drop-down-menu-parent li {
+    padding: 0.7rem;
+
+}
+.drop-down-menu-parent  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.drop-down-menu {
+    display: flex;
+    flex-direction: column;
+}
+/* Mobbile Nav O n Click Items */
+@media screen  and (max-width:1300px){
+    .footer-right-body-grid {
+        margin-left: 10%;
+    }
+    
+}
+
+
+@media screen and (max-width:1008px)  {
+    .Nav-bar-container ul {
+        display: none;
+    }
+
+    .nav-mobile-left-bar {
+        display: flex;
+
+    }
+    .drop-down-menu-parent {
+        display: block;
+    }
+    .drop-down-menu-parent ul {
+        display: flex;
+    }
+
+
+    .container-body-layout-about {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .class-right-about-image{
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+    }
+    .class-left-about-text {
+        align-items: center;
+        justify-content: center;
+        margin-left: 50%;
+    }
+    .text-class-home {
+        margin-left: 20%;
+    } 
+    .child-one-text-class {
+        width: 40%;
+    }
+
+    .Welcome-text-for-home{
+        width: 70%;
+    }
+    .mobile-icon {
+        display: block;
+    }
+}
