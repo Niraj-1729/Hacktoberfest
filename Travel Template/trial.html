@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Navigation</title>
+</head>
+<body>
+   
+    <select id="dropdown">
+        <option value="index.html">Apple Page</option>
+        <option value="about.html">Banana Page</option>
+        <option value="discover.html">Cherry Page</option>
+    </select>
+
+    <script>
+        const dropdown = document.getElementById("dropdown");
+
+        dropdown.addEventListener("change", function () {
+            const selectedValue = dropdown.value;
+            window.location.href = selectedValue;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./appimages/boat_title_icons.png">
+    <title>Discover | Travel </title>
+    <link rel="stylesheet" href="./styles/discover.css" />
+    <script
+      src="https://kit.fontawesome.com/847b5f14d8.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <div>
+        <div class="Nav-bar-container">
+          <div class="Nav-bar-Logo-Name">Travel</div>
+          <div class="Nav-bar-list">
+            <ul class="Nav-bar-list-ul" id="welc">
+              <li>
+                <a href="./index.html"> Home </a>
+              </li>
+              <li>
+                <a href="./about.html">About</a>
+              </li>
+              <li>
+                <a href="./discover.html">Discover</a>
+              </li>
+              <li>
+                <a href="./places.html"
+                  >Place
+                  <span
+                    class="fa-regular fa-moon"
+                    style="padding-left: 3px"
+                  ></span>
+                </a>
+              </li>
+            </ul>
+            <div class="mobile-icon">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="drop-down-menu-parent">
+              <ul class="drop-down-menu">
+                <li>
+                  <a href="./index.html"> Home </a>
+                </li>
+                <li>
+                  <a href="./about.html">About</a>
+                </li>
+                <li>
+                  <a href="./discover.html">Discover</a>
+                </li>
+                <li>
+                  <a href="./places.html"
+                    >Place
+                    <span
+                      class="fa-regular fa-moon"
+                      style="padding-left: 3px"
+                    ></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card-body-container">
+            <div class="discover-text-top">
+                Discover the Most Attractive Place here
+            </div>
+          <div class="container-cards">
+            <div class="card-each">
+                <img  src="./assets/hawai.jpeg" alt="" />
+                <div class="intro-card">
+                    <h1>Hawai</h1>
+                    <p>Kā'anapali Beach on Maui's west side is the crème de la crème of
+                         beaches and this year it takes the top seat as the best beach in Hawaii.</p>
+
+                </div>
+            </div>
+            <div class="card-each">
+                <img  src="./assets/nicecard.jpeg" alt="" />
+                <div class="intro-card">
+                    <h1>San Francisco</h1>
+                    <p> It is huge sandy beach ideal for sunny days.
+                         It is pleasant spending time on beach even in summer,
+                          as you don't feel the heat in the awesome windy atmosphere.</p>
+
+                </div>
+            </div>
+            <div class="card-each">
+                <img  src="./assets/switer.jpeg" alt="" />
+                <div class="intro-card">
+                    <h1>Rio de Janeiro</h1>
+                    <p>
+                        the people-watching may be even more riveting than the scenery. Spy “cariocas” (native Rio residents) 
+                        socializing, playing volleyball and sipping coconut water, all in requisite Brazilian swimwear.
+                    </p>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-main-container">
+          <div class="footer-left-body-icons">
+            <div class="footer-travel-container">Travel</div>
+            <div class="footer-travel-container-des">
+              The world is a book, and those who do not travel read only one page.
+            </div>
+            <div class="footer-left-icons-social">
+              <i class="fa-brands fa-instagram" id="socialicons"></i>
+              <i class="fa-brands fa-square-facebook" id="socialicons2"></i>
+              <i class="fa-brands fa-instagram" id="socialicons3"></i>
+            </div>
+          </div>
+          <div class="footer-right-body-grid">
+            <div class="footer-one-right">
+              <div class="grid-item-header">About</div>
+              <div class="grid-item">Team</div>
+              <div class="grid-item">News & Blog</div>
+              <div class="grid-item">About</div>
+            </div>
+            <div class="footer-two-right">
+              <div class="grid-item-header">Company</div>
+              <div class="grid-item">FAQs</div>
+              <div class="grid-item">Features</div>
+              <div class="grid-item">Plan & Prices</div>
+            </div>
+            <div class="footer-three-right">
+              <div class="grid-item-header">Support</div>
+              <div class="grid-item">Support Center</div>
+              <div class="grid-item-long">Become a member</div>
+              <div class="grid-item">Contact Us</div>
+            </div>
+          </div>
+        </div>
+        <script>
+          const querybar = document.querySelector('.mobile-icon');
+      const dropdownQuery = document.querySelector('.drop-down-menu-parent');
+      const queryicons =  document.querySelector('.mobile-icon i');
+
+      querybar.onclick = function ( ){
+        dropdownQuery.classList.toggle('open');
+        const isOpen = dropdownQuery.classList.contains('open');
+
+        queryicons.classList = isOpen?"fa-solid fa-xmark":"fa-solid fa-bars";
+
+
+      }
+        </script>
+</body>
+</html>

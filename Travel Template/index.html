@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Blog Website</title>
+    <link rel="icon" type="image/x-icon" href="./appimages/boat_title_icons.png">
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/847b5f14d8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="Home-back-image-container">
+      <div class="Nav-bar-container">
+        <div class="Nav-bar-Logo-Name"><a href="index.html">Travel</a></div>
+        <div class="Nav-bar-list" id="elementToChange">
+          <ul class="Nav-bar-list-ul" id="wlec" >
+            <li>
+              <a href="./index.html"> Home </a>
+            </li>
+            <li>
+              <a href="./about.html">About</a>
+            </li>
+            <li>
+              <a href="./discover.html">Discover</a>
+            </li>
+            <li>
+              <a href="./places.html"
+                >Place
+                <span
+                  class="fa-regular fa-moon"
+                  style="padding-left: 3px"
+                ></span>
+              </a>
+            </li>
+          </ul>
+          <div class="mobile-icon">
+            <button class="mobile-bar" onclick="welcome()"><i class="fa-solid fa-bars"  style="color: white;" ></i></button>
+          </div>
+          
+        </div>
+        <div class="drop-down-menu-parent">
+          <ul class="drop-down-menu">
+            <li>
+              <a href="./index.html"> Home </a>
+            </li>
+            <li>
+              <a href="./about.html">About</a>
+            </li>
+            <li>
+              <a href="./discover.html">Discover</a>
+            </li>
+            <li>
+              <a href="./places.html"
+                >Place
+                <span
+                  class="fa-regular fa-moon"
+                  style="padding-left: 3px"
+                ></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="text-class-home">
+        <div class="child-one-text-class">Discover Your Place</div>
+        <div class="Welcome-text-for-home">
+          Explore the best <b class="auto-type"></b>
+        </div>
+        <div class="button-explore-home">
+          <a
+            id="welcome"
+            href="./discover.html"
+            style="text-decoration: none; list-style: none;color: black;"
+            >Explore</a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="index.html"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["Bleautiful Beaches", "Deep Diving", "World of travel"],
+        typeSpeed: 150,
+        backSpeed: 50,
+        loop: true,
+      });
+
+      const querybar = document.querySelector('.mobile-bar');
+      const dropdownQuery = document.querySelector('.drop-down-menu-parent');
+      const queryicons =  document.querySelector('.mobile-bar i');
+
+      querybar.onclick = function ( ){
+        dropdownQuery.classList.toggle('open');
+        const isOpen = dropdownQuery.classList.contains('open');
+
+        queryicons.classList = isOpen?"fa-solid fa-xmark":"fa-solid fa-bars";
+
+
+      }
+
+    </script>
+
+    <!-- <div class="footer-main-container">
+      <div class="footer-left-body-icons">
+        <div class="footer-travel-container">Travel</div>
+        <div class="footer-travel-container-des">
+          The world is a book, and those who do not travel read only one page.
+        </div>
+        <div class="footer-left-icons-social">
+          <i class="fa-brands fa-instagram" id="socialicons"></i>
+          <i class="fa-brands fa-square-facebook" id="socialicons2"></i>
+          <i class="fa-brands fa-instagram" id="socialicons3"></i>
+        </div>
+      </div>
+      <div class="footer-right-body-grid">
+        <div class="footer-one-right">
+          <div class="grid-item-header">About</div>
+          <div class="grid-item">Team</div>
+          <div class="grid-item">News & Blog</div>
+          <div class="grid-item">About</div>
+        </div>
+        <div class="footer-two-right">
+          <div class="grid-item-header">Company</div>
+          <div class="grid-item">FAQs</div>
+          <div class="grid-item">Features</div>
+          <div class="grid-item">Plan & Prices</div>
+        </div>
+        <div class="footer-three-right">
+          <div class="grid-item-header">Support</div>
+          <div class="grid-item">Support Center</div>
+          <div class="grid-item-long">Become a member</div>
+          <div class="grid-item">Contact Us</div>
+        </div>
+      </div>
+    </div> -->
+  </body>
+</html>
