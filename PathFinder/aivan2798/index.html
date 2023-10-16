@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Path Finder</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="anime.css" />
+  
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="utils.js"></script>
+  <script src="script.js"></script>
+  <script src="keys.js"></script>
+</head>
+<body>
+  
+  <div class="cmd_prompt">
+    Choose Starting Point
+    <button id="continue_point">CONTINUE</button>
+  </div>
+  <div id="dest_box" class="cmd_prompt" style="display:none;">
+    Choose Destination Point
+    <button id="find_route">FIND ROUTE</button>
+  </div>
+  <div id="loading" class='lds-hourglass' style="display:none;">
+
+  </div>
+  <br/>
+  
+  <div id="map" style="height:100vh;width: 100vw;">
+    
+ 
+  </div>
+
+</body>
+</html>

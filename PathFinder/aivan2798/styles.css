@@ -1,0 +1,37 @@
+body {
+    background-color: #000000;
+  }
+
+  #map {
+    /* Add your map styling here */
+    
+  }
+
+  
+
+  .cmd_prompt
+  {
+    background-color:rgb(26, 2, 134);
+    display: inline-block;
+    color: white;
+    width: 100vw;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .cmd_prompt button
+  {
+    background-color: #f9fd00;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    position: absolute;
+    right: 0;
+    font-weight: bold;
+  }
+
+  #loading
+  {
+    background-color: rgb(26, 2, 134);
+    width: 100vw;
+  }
