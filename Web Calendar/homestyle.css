@@ -1,0 +1,132 @@
+.left{
+  position: relative;
+  height:550px ;
+  float: left;
+  margin: 5px;
+  overflow-y: scroll;
+  padding: 10px;
+  border: 2px solid black;
+  width: 35%;    
+  border-radius: 20px;   
+  box-shadow: rgba(202, 108, 108, 0.527) 12px -5px 10px;
+}
+.left::-webkit-scrollbar-thumb{
+  border-radius: 2px 15px 15px 2px;
+  background-color: skyblue;
+}
+.left::-webkit-scrollbar{
+  border-radius: 2px 15px 15px 2px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+html{
+  height: 100%;
+}
+body>h2{
+  padding-left: 32%;
+}
+body>h2>button{
+  border-radius: 5px;
+  margin-left: 20px;
+  box-shadow: rgba(202, 108, 108, 0.527) 12px 5px 10px;
+}
+.right{
+  position: relative;
+  height: 590px;
+  overflow-y: hidden;
+  float: right;
+  padding: 10px;
+  margin: 5px;
+  width: 60%;
+}
+.calendar{
+  height: 80%;
+  width: 80%;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 100px;
+  text-align: center;
+  border: 0px;    
+}
+td{
+  border: 0px;
+  font-weight: bold;
+}
+th{
+  border: 0px;
+  font-size: 22px;
+}
+td:hover{
+  background-color: skyblue;
+  color: white;
+  border: 0px solid black;
+}
+h2{
+  color: blue;
+  font-size: 30px;
+}
+hr{
+  border-color: black;
+}
+h1{
+  font-size: 50px;
+}
+footer {
+  background-color: rgb(31, 30, 30);
+  overflow: hidden;
+  align-content: center;
+}
+footer a {
+  text-decoration: none;
+  padding: 20px;
+  
+  float: left;
+  color: white;
+}
+h4{
+text-align-last: right;
+}
+button{
+padding-left: 10px;
+padding-top: 5px;
+padding-right: 10px;
+padding-bottom: 5px;
+}
+body{
+background-image: linear-gradient(to top, rgba(248, 215, 215, 0), rgb(233, 163, 163)); 
+}
+p{
+font-weight: bold;
+}
+
+#March{
+display: block;
+}
+.a_left{
+display: flex;
+float: left;
+padding-left: 130px;
+}
+.a_right{
+display: flex;
+float: right;
+padding-right: 130px;
+}
+.arrow_lr{
+font-weight: bolder;
+cursor: pointer;
+}
+.right>div{
+display: none;
+height: 580px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -30px, rgba(0, 0, 0, 0.3) 0px 30px 60px -50px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+border: 1px solid plum;
+}
+.left>div:nth-child(1){
+display: block;
+}
+.left>div{
+display: none;
+}
