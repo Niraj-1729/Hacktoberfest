@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #168ae9;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+        /* Style the close button */
+        .topright {
+            float: right;
+            cursor: pointer;
+            font-size: 28px;
+        }
+
+        .topright:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>4 Year Holiday List</h2>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, '2019')" id="defaultOpen">2019</button>
+        <button class="tablinks" onclick="openCity(event, '2020')">2020</button>
+        <button class="tablinks" onclick="openCity(event, '2021')">2021</button>
+        <button class="tablinks" onclick="openCity(event, '2022')">2022</button>
+    </div>
+
+    <div id="2019" class="tabcontent">
+        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+        <hr />
+        <h3>January</h3>
+        <p>Jan 1 &#160;&#160; New Year's Day</p>
+        <p>Jan 13 &#160;&#160; Guru Govind Singh's Birthday</p>
+        <p>Jan 14 &#160;&#160; Makar Sankranti</p>
+        <p>Jan 15 &#160;&#160; Pongal</p>
+        <p>Jan 26 &#160;&#160; Republic Day</p>
+        <hr />
+
+        <h3>February</h3>
+        <p>Feb 10 &#160;&#160; Basant Panchami</p>
+        <p>Feb 19 &#160;&#160; Guru Ravidas's Birthday</p>
+        <p>Feb 19 &#160;&#160; Shivaji Jayanti</p>
+        <hr />
+
+        <h3>March</h3>
+        <p>March 1 &#160;&#160; Swami Dayananda Saraswati Jayanti</p>
+        <p>March 4 &#160;&#160; Maha Shivaratri</p>
+        <p>March 19 &#160;&#160; Harzat Ali's Birthday</p>
+        <p>March 20 &#160;&#160; Holika Dahana</p>
+        <p>March 21 &#160;&#160; Holi</p>
+        <hr />
+
+        <h3>April</h3>
+        <p>April 6 &#160;&#160; Cheti Chand</p>
+        <p>April 13 &#160;&#160; Rama Navami</p>
+        <p>April 13 &#16,&#160; Mesadi</p>
+        <p>April 14 &#160;&#160; Vishu</p>
+        <p>April 14 &#160;&#160; Bahag Bihu</p>
+        <p>April 17 &#160;&#160; Mahavir Jayanti</p>
+        <p>April 19 &#160;&#160; Good Friday</p>
+        <p>April 21 &#160;&#160; Easter Day</p>
+        <hr />
+
+        <h3>May</h3>
+        <p>May 9 &#160;&#160; Guru Rabindranath's birthday</p>
+        <p>May 18 &#160;&#160; Vesak</p>
+        <p>May 31 &#160;&#160; Jamat ul-Vida</p>
+        <hr />
+
+        <h3>June</h3>
+        <p>June 5 &#160;&#160; Idu'l Fitr</p>
+         <hr />
+
+        <h3>July</h3>
+        <p>July4 &#160;&#160; Rath Yatra</p>
+        <hr />
+
+        <h3>August</h3>
+        <p>Aug12 &#160;&#160; Id-ul-Zuha</p>
+        <p>Aug 15 &#160;&#160; Independence day</p>
+        <p>Aug 15 &#160;&#160; Raksha Bandhan</p>
+        <p>Aug 17 &#160;&#160; Nauraj</p>
+        <p>Aug 24 &#160;&#160; Janmashtami</p>
+        <hr />
+
+        <h3>September</h3>
+        <p>Sep 2 &#160;&#160; Ganesh Chaturthi</p>
+        <p>Sep 10 &#160;&#160; Muharram</p>
+        <p>Sep 11 &#160;&#160; Onam</p>
+        <hr />
+
+        <h3>October</h3>
+        <p>Oct 2 &#160;&#160; Mahatmaa Gandhi Jayandhi</p>
+        <p>Oct 7 &#160;&#160; Dusshera</p>
+        <p>Oct 13 &#160;&#160; Maharishi Valmiki Birthday</p>
+        <p>Oct 17 &#160;&#160; Karaka Chaturthi</p>
+        <p>Oct 27 &#160;&#160; Naraka Chaturdasi</p>
+        <p>Oct 27 &#160;&#160; Diwali</p>
+        <hr />
+
+        <h3>November</h3>
+        <p>Nov 2 &#160;&#160 Chhat Puja</p>
+        <p>Nov 10 &#160;&#160; birthday of Prophet Mohammad</p>
+        <p>Nov 12 &#160; Guru Nanak's birthday</p>
+        <p>Nov 24 &#160;&#160; Guru Teg Bahadur's Matyrdom Day</p>
+        <hr />
+        <h3>December</h3>
+        <p>Dec 24 &#160;&#160; Christmas Eve</p>
+        <p>Dec 25 &#160;&#160; Christmas Day</p>
+        <hr/>
+    </div>
+    <div id="2020" class="tabcontent">
+        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+        <hr />
+        <h3>January</h3>
+        <p>Jan 1 &#160;&#160; New Year's Day</p>
+        <p>Jan 2 &#160;&#160; Guru Govind Singh's Birthday</p>
+        <p>Jan 13 &#160;&#160; Lohri</p>
+        <p>Jan 15 &#160;&#160; Makar Sankranthi</p>
+        <p>Jan 26 &#160;&#160; Republic Day</p>
+        <p>Jan 30 &#160;&#160; Sri Panchami</p>
+        <hr />
+
+        <h3>February</h3>
+        <p>Feb 9 &#160;&#160; Guru Ravidas's Birthday</p>
+        <p>Feb 18 &#160;&#160; Swamy Dayananda Saraswathi Jayanthi</p>
+        <p>Feb 19 &#160;&#160; Shivaji Jayanthi</p>
+        <p>Feb 21 &#160;&#160; Maha Shivaratri</p>
+        <hr />
+
+        <h3>March</h3>
+        <p>March 9 &#160;&#160; Holika Dahana</p>
+        <p>March 9 &#160;&#160; Hazarat Ali's Birthday</p>
+        <p>March 10 &#160;&#160 Holi</p>
+        <p>March 25 &#160;&#160; Ugadi</p>
+        <hr />
+
+        <h3>April</h3>
+        <p>April 2 &#160;&#160; Ram Navami</p>
+        <p>April 6 &#160;&#160; Mahavir Jayanti</p>
+        <p>April 10 &#160;&#160; Good Friday</p>
+        <p>April 12 &#160;&#160; Easter day</p>
+        <p>April 13 &#160;&#160; Vaishaki</p>
+        <p>April 14 &#160;&#160; Mesadi</p>
+        <hr />
+
+        <h3>May</h3>
+        <p>May 7 &#160;&#160; Buddha Purnima</p>
+        <p>May 8 &#160;&#160; Guru Rabindranath's birthday</p>
+        <p>May 22 &#160;&#160; Jamat Ul-Vida</p>
+        <p>May 25 &#160;&#160; Idu'l Fitr</p>
+        <hr />
+
+        <h3>June</h3>
+        <p>June 30 &#160;&#160; Rath Yatra</p>
+        <hr />
+
+        <h3>August</h3>
+        <p>Aug 1 &#160;&#160; Id-ul-Zuhu</p>
+        <p>Aug 3 &#160;&#160; Raksha Bandhan </p>
+        <p>Aug 11 &#160;&#160; Janmasthami</p>
+        <p>Aug 12 &#160;&#160; Janmasthami</p>
+        <p>Aug 15 &#160;&#160; Independence day</p>
+        <p>Aug 16 &#160;&#160; Nauraj</p>
+        <p>Aug 22 &#160;&#160; Ganesh chaturthi</p>
+        <hr />
+
+        
+        <h3>October</h3>
+        <p>Oct 2 &#160;&#160; Mahatma Gandhi Jayanthi</p>
+        <p>Oct 23 &#160;&#160; Dusshra</p>
+        <p>Oct 24 &#160;&#160; Dusshra</p>
+        <p>Oct 25 &#160;&#160; Dusshra</p>
+        <p>Oct 26 &#160;&#160; Vijay Dashmi</p>
+        <p>Oct 30 &#160;&#160; Birthday of Prophet Mohammad</p>
+
+        <hr />
+
+        <h3>November</h3>
+        <p>Nov 4 &#160;&#160; Karaka Chaturthi</p>
+        <p>Nov 14 &#160;&#160; Diwali</p>
+        <p>Nov 15 &#160;&#160; Govardhan puja</p>
+        <p>Nov 16 &#160;&#160; Bhai Duj</p>
+        <p>Nov 20 &#160;&#160; Chhat Puja</p>
+        <hr />
+
+        <h3>December</h3>
+        <p>Dec 24 &#160;&#160; Christmas Eve</p>
+        <p>Dec 25 &#160;&#160; Christmas Day </p>
+        <hr />
+
+    </div>
+
+    <div id="2021" class="tabcontent">
+        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+        <hr />
+        <h3>January</h3>
+        <p>Jan 1 &#160;&#160; New Year's Day</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+
+        <hr />
+
+        <h3>February</h3>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+
+        <hr />
+
+        <h3>March</h3>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <hr />
+
+        <h3>April</h3>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <hr />
+
+        <h3>May</h3>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <hr />
+
+        <h3>June</h3>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+
+        <hr />
+
+        <h3>July</h3>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <hr />
+
+        <h3>August</h3>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+
+        <hr />
+
+        <h3>September</h3>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <hr />
+
+        <h3>October</h3>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+
+        <hr />
+
+        <h3>November</h3>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <hr />
+
+        <h3>December</h3>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <hr/>
+    </div>
+    <div id="2022" class="tabcontent">
+        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+        <hr />
+        <h3>January</h3>
+        <p>Jan 1 &#160;&#160; New Year's Day</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+
+        <hr />
+
+        <h3>February</h3>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+
+        <hr />
+
+        <h3>March</h3>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <hr />
+
+        <h3>April</h3>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <hr />
+
+        <h3>May</h3>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <hr />
+
+        <h3>June</h3>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+
+        <hr />
+
+        <h3>July</h3>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <hr />
+
+        <h3>August</h3>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+
+        <hr />
+
+        <h3>September</h3>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <hr />
+
+        <h3>October</h3>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+
+        <hr />
+
+        <h3>November</h3>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <hr />
+
+        <h3>December</h3>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <p>Holiday list type here.</p>
+        <hr/>
+    </div>
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+
+</html>
