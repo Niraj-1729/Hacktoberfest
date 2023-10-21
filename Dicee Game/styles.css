@@ -1,0 +1,40 @@
+body{
+  background-color: #393E46;
+  text-align: center;
+}
+
+p{
+  font-family: 'Indie Flower', cursive;
+  color: #4ECCA3;
+  font-size: 2rem;
+}
+
+.instructions{
+  font-size: 1.5rem;
+}
+
+.container{
+  width: 70%;
+  margin: auto;
+}
+
+.heading{
+  font-family: 'Lobster', cursive;
+  color: #4ECCA3;
+  font-size: 7.5rem;
+  margin: 25px;
+}
+
+.dice{
+  display: inline-block;
+}
+
+.dice img{
+  width: 80%;
+}
+
+footer p{
+  margin-top: 4%;
+  color: #eeeeee;
+  font-size: 1.5rem;
+}
