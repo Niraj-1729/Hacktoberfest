@@ -1,0 +1,1977 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#heading {
+    color: white;
+    text-align: center;
+    font-size: 3vw;
+   
+}
+
+.section {
+    /* margin-top: 10%; */
+    /* position: relative; */
+    background-image: url('github.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: change 40s infinite ease-in-out;
+    background-image: center;
+    justify-content: center;
+
+}
+
+img {
+    width: 100%;
+    height: 50%;
+}
+
+/* //This is for adjusting the background images */
+/* //This is for adjusting the background images */
+/* //This is for adjusting the background images */
+@media screen and (max-width: 1080px) {
+   .section{
+    width: 100%;
+    height: 40vh;
+   }
+   
+}
+@keyframes change {
+    10% {
+
+        background-image: url('whatsaap.jpg')
+    }
+
+    20% {
+
+        background-image: url('chatgpt.webp')
+    }
+
+    30% {
+
+        background-image: url('linkdein.png')
+    }
+
+    40% {
+
+        background-image: url('github.jpg')
+    }
+
+    50% {
+
+        background-image: url('facebook.jpg')
+    }
+
+    60% {
+
+        background-image: url('twitterbackground.avif')
+    }
+
+    70% {
+
+        background-image: url('instagrambackground.png')
+    }
+
+    80% {
+
+        background-image: url('googlebackground.jpg')
+    }
+
+    /* 90% {
+
+        background-image: url('youtubebackground.jpg')
+    } */
+
+100% {
+
+        background-image: url('wikipediabackground.jpg')
+    }
+
+
+
+}
+
+button {
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.items #Facebook:hover {
+    background-color: rgb(40, 197, 171);
+    transform: scale(1.2);
+}
+
+.items #Whatsaap:hover {
+    background-color: rgb(40, 197, 171);
+        transform: scale(1.2);
+
+}
+
+.items #chatgpt:hover {
+    background-color: rgb(40, 197, 171);
+        transform: scale(1.2);
+
+}
+
+.items #Linkdein:hover {
+    background-color: rgb(40, 197, 171);
+        transform: scale(1.2);
+
+}
+
+.items #Github:hover {
+    background-color: rgb(40, 197, 171);
+        transform: scale(1.2);
+
+}
+
+.items #Youtube:hover {
+    background-color: rgb(40, 197, 171);
+        transform: scale(1.2);
+
+}
+
+.items #Instagram:hover {
+    background-color: rgb(40, 197, 171);
+        transform: scale(1.2);
+
+}
+
+.items #Google:hover {
+    background-color: rgb(40, 197, 171);
+        transform: scale(1.2);
+
+}
+
+.items #twitter:hover {
+    background-color: rgb(40, 197, 171);
+        transform: scale(1.2);
+
+}
+
+.items #telegram:hover {
+    background-color: rgb(40, 197, 171);
+        transform: scale(1.2);
+
+}
+
+.items #wikipedia:hover {
+    background-color: rgb(40, 197, 171);
+        transform: scale(1.2);
+
+}
+
+.items #amazon:hover {
+    background-color: rgb(40, 197, 171);
+        transform: scale(1.2);
+
+}
+
+.container {
+    width: 100%;
+    height: 300vh;
+    background-color: black
+}
+
+.container .items {
+    margin-left: 5%;
+    overflow: hidden;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 130vh;
+    /* background-color: rgb(17, 101, 134); */
+    display: grid;
+    place-items: center;
+    /*  */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.items #chatgpt {
+    font-size: 1.8vw;
+    background-color: rgb(54, 52, 52);
+    color: white;
+    text-align: center;
+    width: 33vh;
+    /* padding: 5%; */
+    height: 33vh;
+
+    margin-right: 40px;
+}
+
+#chatgpt img {
+    height: 6vh;
+    width: 18%;
+    margin-left: 42%;
+}
+
+.items #Whatsaap {
+    font-size: 1.8vw;
+
+    background-color: rgb(54, 52, 52);
+    color: white;
+    text-align: center;
+    width: 33vh;
+    height: 33vh;
+    /* padding: 5%; */
+    /* margin-left: 20%; */
+    margin-right: 40px;
+    /* margin: 10% ,30%; */
+}
+
+#Whatsaap img {
+    height: 6vh;
+    width: 18%;
+    border-radius: 8px;
+    margin-left: 42%;
+}
+
+.items #Facebook {
+    font-size: 1.8vw;
+    background-color: rgb(54, 52, 52);
+    color: white;
+    text-align: center;
+    width: 33vh;
+    height: 33vh;
+    font-size: 2vw;
+    margin-right: 40px;
+
+}
+
+#Facebook img {
+    height: 6vh;
+    width: 18%;
+    margin-left: 42%;
+
+}
+
+.items #Linkdein {
+    font-size: 1.8vw;
+    background-color: rgb(54, 52, 52);
+    color: white;
+    text-align: center;
+    width: 33vh;
+    height: 33vh;
+
+}
+
+#Linkdein img {
+    height: 6vh;
+    width: 18%;
+    margin-left: 42%;
+
+}
+
+.items #Github {
+    font-size: 1.8vw;
+    background-color: rgb(54, 52, 52);
+    color: white;
+    text-align: center;
+    width: 33vh;
+    height: 33vh;
+    margin-right: 40px;
+
+}
+
+#Github img {
+    height: 6vh;
+    width: 18%;
+    margin-left: 42%;
+}
+
+.items #Instagram {
+    font-size: 1.8vw;
+    background-color: rgb(54, 52, 52);
+    color: white;
+    text-align: center;
+    width: 33vh;
+    height: 33vh;
+    margin-right: 40px;
+
+}
+
+#Instagram img {
+    height: 6vh;
+    width: 18%;
+    margin-left: 42%;
+}
+
+.items #Youtube {
+    font-size: 1.8vw;
+    background-color: rgb(54, 52, 52);
+    color: white;
+    text-align: center;
+    width: 33vh;
+    height: 33vh;
+    margin-right: 40px;
+
+}
+
+#Youtube img {
+    height: 6vh;
+    width: 18%;
+    margin-left: 42%;
+}
+
+.items #Google {
+    font-size: 1.8vw;
+    background-color: rgb(54, 52, 52);
+    color: white;
+    text-align: center;
+    width: 33vh;
+    height: 33vh;
+    margin-right: 40px;
+
+}
+
+#Google img {
+    height: 6vh;
+    width: 18%;
+    margin-left: 42%;
+    border-radius: 8px;
+
+}
+
+.items #twitter {
+    font-size: 1.8vw;
+    background-color: rgb(54, 52, 52);
+    color: white;
+    text-align: center;
+    width: 33vh;
+    height: 33vh;
+    margin-right: 40px;
+
+}
+
+#twitter img {
+    height: 6vh;
+    width: 18%;
+    margin-left: 42%;
+    border-radius: 8px;
+
+}
+
+.items #telegram {
+    font-size: 1.8vw;
+    background-color: rgb(54, 52, 52);
+    color: white;
+    text-align: center;
+    width: 33vh;
+    height: 33vh;
+    margin-right: 40px;
+
+}
+
+#telegram img {
+    height: 6vh;
+    width: 18%;
+    margin-left: 42%;
+    border-radius: 8px;
+
+}
+
+.items #wikipedia {
+    font-size: 1.8vw;
+    background-color: rgb(54, 52, 52);
+    color: white;
+    text-align: center;
+    width: 33vh;
+    height: 33vh;
+    margin-right: 40px;
+
+}
+
+#wikipedia img {
+    height: 6vh;
+    width: 18%;
+    margin-left: 42%;
+    border-radius: 8px;
+
+}
+
+.items #amazon {
+    font-size: 1.8vw;
+    background-color: rgb(54, 52, 52);
+    color: white;
+    text-align: center;
+    width: 33vh;
+    height: 33vh;
+    margin-right: 40px;
+
+}
+
+#amazon img {
+    height: 6vh;
+    width: 18%;
+    margin-left: 42%;
+    border-radius: 8px;
+
+}
+
+
+.itmes {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.itmes {
+    margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.itmes:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .items {
+        /* width: 100%;
+        display: block;
+        margin-bottom: 20px; */
+        flex-direction: row;
+    }
+
+    /* .section {
+
+        width: 100%;
+        height: 32vh;
+
+    }
+
+    #chatgpt img {
+        height: 2vh;
+        width: 17%;
+    }
+
+    .items #chatgpt {
+        font-size: 3.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 16vh;
+        height: 4vh;
+
+        margin-right: 20px;
+
+    }
+
+    #Whatsaap img {
+        height: 2vh;
+        width: 17%;
+    }
+
+    .items #Whatsaap {
+        font-size: 3.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 16vh;
+        height: 4vh;
+
+        margin-right: 20px;
+
+    }
+
+    #Facebook img {
+        height: 2vh;
+        width: 17%;
+    }
+
+    .items #Facebook {
+        font-size: 3.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 16vh;
+        height: 4vh;
+
+        margin-right: 20px;
+
+    }
+
+    #Linkdein img {
+        height: 2vh;
+        width: 17%;
+    }
+
+    .items #Linkdein {
+        font-size: 3.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 16vh;
+        height: 4vh;
+
+        margin-right: 20px;
+
+    }
+
+    #Github img {
+        height: 2vh;
+        width: 17%;
+    }
+
+    .items #Github {
+        font-size: 3.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 16vh;
+        height: 4vh;
+
+        margin-right: 20px;
+
+    }
+
+    #Instagram img {
+        height: 2vh;
+        width: 17%;
+    }
+
+    .items #Instagram {
+        font-size: 3.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 16vh;
+        height: 4vh;
+
+        margin-right: 20px;
+
+    }
+
+    #Youtube img {
+        height: 2vh;
+        width: 17%;
+    }
+
+    .items #Youtube {
+        font-size: 3.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 16vh;
+        height: 4vh;
+
+        margin-right: 20px;
+
+    }
+
+    #Google img {
+        height: 2vh;
+        width: 17%;
+        border-radius: 8px;
+    }
+
+    .items #Google {
+        font-size: 3.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 16vh;
+        height: 4vh;
+
+        margin-right: 20px;
+
+    }
+
+    #twitter img {
+        height: 2vh;
+        width: 17%;
+        border-radius: 8px;
+    }
+
+    .items #twitter {
+        font-size: 3.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 16vh;
+        height: 4vh;
+
+        margin-right: 20px;
+
+    }
+
+    #telegram img {
+        height: 2vh;
+        width: 17%;
+        border-radius: 8px;
+    }
+
+    .items #telegram {
+        font-size: 3.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 16vh;
+        height: 4vh;
+
+        margin-right: 20px;
+
+    }
+
+    #wikipedia img {
+        height: 2vh;
+        width: 17%;
+        border-radius: 8px;
+    }
+
+    .items #wikipedia {
+        font-size: 3.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 16vh;
+        height: 4vh;
+
+        margin-right: 20px;
+
+    }
+
+    #amazon img {
+        height: 2vh;
+        width: 17%;
+        border-radius: 8px;
+    }
+
+    .items #amazon {
+        font-size: 3.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 16vh;
+        height: 4vh;
+
+        margin-right: 20px;
+
+    }
+ */
+
+}
+
+/* This is responsive from 1060 to 1460  */
+/* This is responsive from 1060 to 1460  */
+@media only screen and (max-width:1460px) {
+    .container {
+        margin-top: 0%;
+    }
+
+    .items #Github {
+        font-size: 1.8vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        /* display: grid; */
+        /* width: 34vh;
+        height: 8vh; */
+
+        margin-right: 20px;
+        margin-left: 40px;
+
+    }
+
+    #Github img {
+        height: 6vh;
+        width: 6vh;
+    }
+
+    .items #Instagram {
+        font-size: 1.8vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        /* width: 34vh;
+        height: 8vh; */
+
+        margin-right: 20px;
+        margin-left: 20px;
+
+    }
+
+    #Instagram img {
+        height: 5vh;
+        width: 6vh;
+    }
+
+    .items #Youtube {
+        font-size: 1.8vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        /* width: 34vh;
+        height: 8vh; */
+
+        margin-right: 20px;
+        /* margin-left: 20px; */
+
+    }
+
+    #Youtube img {
+        height: 6vh;
+        width: 6vh;
+    }
+
+    .items #Google {
+        font-size: 1.8vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        /* width: 34vh;
+        height: 8vh; */
+
+        margin-right: 20px;
+        margin-left: 20px;
+
+    }
+
+    #Google img {
+        height: 5vh;
+        width: 6vh;
+    }
+
+    .items #twitter {
+        font-size: 1.8vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        /* width: 34vh;
+        height: 8vh; */
+
+        /* margin-right: 20px; */
+        margin-left: 20px;
+
+    }
+
+    #twitter img {
+        height: 4vh;
+        width: 6vh;
+    }
+}
+
+/* Below 1060px */
+/* Below 1060px */
+@media only screen and (max-width:1080px) {
+    .section{
+        width: 100%;
+        height: 74vh;
+    }
+    .container {
+        margin-top: 0%;
+        margin-right: 50%;
+    }
+
+    .items #chatgpt {
+        font-size: 2.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        /* width: 34vh;
+        height: 8vh; */
+        width: 23vh;
+        height: 18vh;
+
+        margin-right: 20px;
+        margin-left: 40px;
+
+    }
+
+    #chatgpt img {
+        height: 5vh;
+        width: 6vh;
+    }
+
+    .items #Github {
+        font-size: 2.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 23vh;
+        height: 18vh;
+
+        margin-right: 20px;
+        margin-left: 20px;
+
+    }
+
+    #Github img {
+        height: 8vh;
+        width: 8vh;
+    }
+
+    .items #Linkdein {
+
+        font-size: 2.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 23vh;
+        height: 18vh;
+
+        margin-right: 20px;
+        margin-left: 40px;
+
+    }
+
+    #Linkdein img {
+        height: 6vh;
+        width: 6vh;
+    }
+
+    .items #Instagram {
+        font-size: 2.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 23vh;
+        height: 18vh;
+
+        margin-right: 20px;
+        margin-left: 20px;
+
+    }
+
+    #Instagram img {
+        height: 6vh;
+        width: 6vh;
+    }
+
+    .items #Whatsaap {
+        font-size: 2.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 23vh;
+        height: 18vh;
+
+        margin-right: 20px;
+        margin-left: 20px;
+
+    }
+
+    #Whatsaap img {
+        height: 6vh;
+        width: 6vh;
+    }
+
+    .items #Facebook {
+        font-size: 2.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 23vh;
+        height: 18vh;
+
+        margin-right: 20px;
+        margin-left: 20px;
+
+    }
+
+    #Facebook img {
+        height: 6vh;
+        width: 6vh;
+    }
+
+    .items #Youtube {
+        font-size: 2.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 23vh;
+        height: 18vh;
+
+        margin-right: 20px;
+        margin-left: 40px;
+
+    }
+
+    #Youtube img {
+        height: 6vh;
+        width: 6vh;
+    }
+
+    .items #Google {
+        font-size: 2.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 23vh;
+        height: 18vh;
+
+        margin-right: 20px;
+        margin-left: 20px;
+
+    }
+
+    #Google img {
+        height: 6vh;
+        width: 6vh;
+    }
+
+    .items #twitter {
+        font-size: 2.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 23vh;
+        height: 18vh;
+
+        /* margin-right: 20px; */
+        margin-left: 20px;
+
+    }
+
+    #twitter img {
+        height: 6vh;
+        width: 6vh;
+    }
+
+    .items #telegram {
+        font-size: 2.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 23vh;
+        height: 18vh;
+
+        /* margin-right: 20px; */
+        margin-left: 40px;
+
+    }
+
+    #telegram img {
+        height: 6vh;
+        width: 6vh;
+    }
+
+    .items #telegram {
+        font-size: 2.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 23vh;
+        height: 18vh;
+
+        margin-right: 20px;
+        margin-left: 40px;
+
+    }
+
+    #telegram img {
+        height: 6vh;
+        width: 6vh;
+    }
+
+    .items #wikipedia {
+        font-size: 2.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 23vh;
+        height: 18vh;
+
+        margin-right: 20px;
+        margin-left: 20px;
+
+    }
+
+    #wikipedia img {
+        height: 6vh;
+        width: 6vh;
+    }
+
+    .items #amazon {
+        font-size: 2.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 23vh;
+        height: 18vh;
+
+        /* margin-right: 20px; */
+        margin-left: 20px;
+
+    }
+
+    #amazon img {
+        height: 6vh;
+        width: 7vh;
+    }
+}
+
+/* //Below 760  */
+/* //Below 760  */
+@media only screen and (max-width:840px) {
+    .section{
+        width: 100%;
+        height: 57vh;
+    }
+    .container {
+        margin-top: 0%;
+        margin-right: 50%;
+    }
+
+    .items #chatgpt {
+        font-size: 2.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        /* width: 34vh;
+        height: 8vh; */
+        width: 17vh;
+        height: 11vh;
+
+        margin-right: 20px;
+        margin-left: 40px;
+
+    }
+
+    #chatgpt img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #Github {
+        font-size: 2.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 17vh;
+        height: 11vh;
+
+        margin-right: 20px;
+        margin-left: 20px;
+
+    }
+
+    #Github img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #Linkdein {
+
+        font-size: 2.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 17vh;
+        height: 11vh;
+
+        margin-right: 20px;
+        margin-left: 40px;
+
+    }
+
+    #Linkdein img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #Instagram {
+        font-size: 2.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 17vh;
+        height: 11vh;
+
+        margin-right: 20px;
+        margin-left: 20px;
+
+    }
+
+    #Instagram img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #Whatsaap {
+        font-size: 2.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 17vh;
+        height: 11vh;
+
+        margin-right: 20px;
+        margin-left: 20px;
+
+    }
+
+    #Whatsaap img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #Facebook {
+        font-size: 2.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 17vh;
+        height: 11vh;
+
+        margin-right: 20px;
+        margin-left: 20px;
+
+    }
+
+    #Facebook img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #Youtube {
+        font-size: 2.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 17vh;
+        height: 11vh;
+
+        margin-right: 20px;
+        margin-left: 40px;
+
+    }
+
+    #Youtube img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #Google {
+        font-size: 2.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 17vh;
+        height: 11vh;
+
+        margin-right: 20px;
+        margin-left: 20px;
+
+    }
+
+    #Google img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #twitter {
+        font-size: 2.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 17vh;
+        height: 11vh;
+
+        /* margin-right: 20px; */
+        margin-left: 20px;
+
+    }
+
+    #twitter img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #telegram {
+        font-size: 2.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 17vh;
+        height: 11vh;
+
+        /* margin-right: 20px; */
+        margin-left: 40px;
+
+    }
+
+    #telegram img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #telegram {
+        font-size: 2.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 17vh;
+        height: 11vh;
+
+        margin-right: 20px;
+        margin-left: 40px;
+
+    }
+
+    #telegram img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #wikipedia {
+        font-size: 2.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 17vh;
+        height: 11vh;
+
+        /* margin-right: 20px; */
+        margin-left: 20px;
+
+    }
+
+    #wikipedia img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #amazon {
+        font-size: 2.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 17vh;
+        height: 11vh;
+
+        /* margin-right: 20px; */
+        margin-left: 20px;
+
+    }
+
+    #amazon img {
+        height: 5vh;
+        width: 5vh;
+    }
+}
+
+@media only screen and (max-width:680px) {
+    .section{
+        width: 100%;
+        height: 25vh;
+    }
+    .container {
+        margin-top: -20%;
+        margin-right: 20%;
+    }
+
+    .items #chatgpt {
+        font-size: 3.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        /* width: 34vh;
+        height: 8vh; */
+        width: 21vh;
+        height: 6vh;
+
+        margin-right: 20px;
+        margin-left: 40px;
+
+    }
+
+    #chatgpt img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #Github {
+        font-size: 3.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        margin-right: 20px;
+        margin-left: 40px;
+
+    }
+
+    #Github img {
+        height: 6vh;
+        width: 6vh;
+    }
+
+    .items #Linkdein {
+
+        font-size: 3.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        margin-right: 20px;
+        margin-left: 40px;
+
+    }
+
+    #Linkdein img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #Instagram {
+        font-size: 3.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        margin-right: 20px;
+        margin-left: 20px;
+
+    }
+
+    #Instagram img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #Whatsaap {
+        font-size: 3.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        margin-right: 20px;
+        margin-left: 20px;
+
+    }
+
+    #Whatsaap img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #Facebook {
+        font-size: 3.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        margin-right: 0px;
+        margin-left: 40px;
+
+    }
+
+    #Facebook img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #Youtube {
+        font-size: 3.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        margin-right: 20px;
+        margin-left: 40px;
+
+    }
+
+    #Youtube img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #Google {
+        font-size: 3.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        margin-right: 20px;
+        margin-left: 20px;
+
+    }
+
+    #Google img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #twitter {
+        font-size: 3.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        /* margin-right: 20px; */
+        margin-left: 40px;
+
+    }
+
+    #twitter img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #telegram {
+        font-size: 3.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        /* margin-right: 20px; */
+        margin-left: 0px;
+
+    }
+
+    #telegram img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #wikipedia {
+        font-size: 3.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        /* margin-right: 20px; */
+        margin-left: 40px;
+
+    }
+
+    #wikipedia img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #amazon {
+        font-size: 3.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        /* margin-right: 20px; */
+        margin-left: 20px;
+
+    }
+
+    #amazon img {
+        height: 5vh;
+        width: 5vh;
+    }
+}
+/* //fOR 600PX */
+/* //fOR 600PX */
+@media only screen and (max-width:600px) {
+    .container {
+        margin-top: -20%;
+        margin-right: 20%;
+    }
+    .items #telegram{
+        margin-left: 20px;
+    }
+
+}
+
+/* //For 520px */
+/* //For 520px */
+@media only screen and (max-width:520px) {
+    .container {
+        /* margin-top: -20%;
+        margin-right: 20%; */
+        width: 100%;
+    }
+    .items #chatgpt {
+        font-size: 3.8vw;
+        /* background-color: rgb(54, 52, 52); */
+        color: white;
+        /* text-align: center;
+        justify-content: center;
+        align-items: center; */
+
+        /* width: 34vh;
+        height: 8vh; */
+        width: 21vh;
+        height: 6vh;
+
+        margin-right: 20px;
+        margin-left: 40px;
+
+    }
+
+    #chatgpt img {
+        height: 5vh;
+        width: 5vh;
+        float:left;
+    }
+
+    .items #Github {
+        font-size: 3.8vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        margin-right: 20px;
+        margin-left: 40px;
+
+    }
+
+    #Github img {
+        height: 6vh;
+        width: 6vh;
+    }
+
+    .items #Linkdein {
+
+        font-size: 3.8vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        margin-right: 20px;
+        margin-left: 40px;
+
+    }
+
+    #Linkdein img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #Instagram {
+        font-size: 3.8vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        margin-right: 20px;
+        margin-left: 40px;
+
+    }
+
+    #Instagram img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #Whatsaap {
+        font-size: 3.8vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        margin-right: 20px;
+        margin-left: 40px;
+
+    }
+
+    #Whatsaap img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #Facebook {
+        font-size: 3.8vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        margin-right: 0px;
+        margin-left: 40px;
+
+    }
+
+    #Facebook img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #Youtube {
+        font-size: 3.8vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        margin-right: 20px;
+        margin-left: 40px;
+
+    }
+
+    #Youtube img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #Google {
+        font-size: 3.8vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        margin-right: 20px;
+        margin-left: 40px;
+
+    }
+
+    #Google img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #twitter {
+        font-size: 3.8vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        /* margin-right: 20px; */
+        margin-left: 40px;
+
+    }
+
+    #twitter img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #telegram {
+        font-size: 3.8vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        /* margin-right: 20px; */
+        margin-left: 40px;
+
+    }
+
+    #telegram img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #wikipedia {
+        font-size: 3.8vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        /* margin-right: 20px; */
+        margin-left: 40px;
+
+    }
+
+    #wikipedia img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #amazon {
+        font-size: 3.3vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        /* margin-right: 20px; */
+        margin-left: 40px;
+
+    }
+
+    #amazon img {
+        height: 5vh;
+        width: 5vh;
+    }
+}
+
+/* //For 420px */
+/* //For 420px */
+@media only screen and (max-width:450px) {
+    .container {
+        /* margin-top: -20%;
+        margin-right: 20%; */
+        margin-top: 0%;
+        width: 100%;
+        height: 217vh;
+    }
+    
+    .items #chatgpt {
+        font-size: 5.5vw;
+        /* background-color: rgb(54, 52, 52); */
+        color: white;
+        /* text-align: center;
+        justify-content: center;
+        align-items: center; */
+
+        /* width: 34vh;
+        height: 8vh; */
+        width: 21vh;
+        height: 6vh;
+
+        margin-right: 20px;
+        margin-left: 40px;
+
+    }
+
+    #chatgpt img {
+        height: 5vh;
+        width: 5vh;
+        float:left;
+    }
+
+    .items #Github {
+        font-size: 5.5vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        margin-right: 20px;
+        margin-left: 40px;
+
+    }
+
+    #Github img {
+        height: 6vh;
+        width: 6vh;
+    }
+
+    .items #Linkdein {
+
+        font-size: 5.5vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        margin-right: 20px;
+        margin-left: 40px;
+
+    }
+
+    #Linkdein img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #Instagram {
+        font-size: 5.5vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        margin-right: 20px;
+        margin-left: 40px;
+
+    }
+
+    #Instagram img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #Whatsaap {
+        font-size: 5.5vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        margin-right: 20px;
+        margin-left: 40px;
+
+    }
+
+    #Whatsaap img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #Facebook {
+        font-size: 5.5vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        margin-right: 0px;
+        margin-left: 40px;
+
+    }
+
+    #Facebook img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #Youtube {
+        font-size: 5.5vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        margin-right: 20px;
+        margin-left: 40px;
+
+    }
+
+    #Youtube img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #Google {
+        font-size: 5.5vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        margin-right: 20px;
+        margin-left: 40px;
+
+    }
+
+    #Google img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #twitter {
+        font-size: 5.5vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        /* margin-right: 20px; */
+        margin-left: 40px;
+
+    }
+
+    #twitter img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #telegram {
+        font-size: 5.5vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        /* margin-right: 20px; */
+        margin-left: 40px;
+
+    }
+
+    #telegram img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #wikipedia {
+        font-size: 5.5vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        /* margin-right: 20px; */
+        margin-left: 40px;
+
+    }
+
+    #wikipedia img {
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .items #amazon {
+        font-size: 4.5vw;
+        background-color: rgb(54, 52, 52);
+        color: white;
+        text-align: center;
+        width: 21vh;
+        height: 6vh;
+
+        /* margin-right: 20px; */
+        margin-left: 40px;
+
+    }
+
+    #amazon img {
+        height: 5vh;
+        width: 5vh;
+    }
+}
