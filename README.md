@@ -84,7 +84,7 @@ Enjoy experimenting with the project!
   <tr>
     <td>
        <a href="https://github.com/Niraj-1729/Hacktoberfest/graphs/contributors" align="center">
-          <img src="https://contrib.rocks/image?repo=TusharKesarwani/Front-End-Projects" />
+          <img src="https://contrib.rocks/image?repo=Niraj-1729/Hacktoberfest" />
        </a>
     </td>
   </tr>
