@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="ADH.ico" type="image/x-icon">
+    <title>Online Court E-Portal</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #3f88c5, #003366);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #003366;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(218, 227, 247, 0.8);
+            color: #003366;
+        }
+
+        input[type="radio"] {
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #e50914;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #ff0000;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #003366;
+            margin: 20px 0;
+            
+            
+           
+        }
+    </style>
+</head>
+<body>
+    <form action="loading.html">
+        <h1 id="1s"> Online Court E-Portal Registration</h1>
+        <h2>Contact Information</h2>
+        <p class="a"> <label for="Name">Full Name:</label>
+            <input type="text" name="Name" id="Name" required>
+            
+        </p>
+        <label for="gender"></label>
+        <p>Gender: &nbsp;&nbsp;
+            <label for="Male">Male</label> <input type="radio" name="Gender" id="Male" required>&nbsp;
+            <label for="Female">Female</label> <input type="radio" name="Gender" id="Female" required>
+        </p>
+
+        <p>
+            <label for="Address">Address:</label>
+            <textarea name="Address" id="Address" cols="30" rows="7" required></textarea>
+        </p>
+        <p>
+            <label for="email">Email:</label> <input type="email" name="email" id="email" required>
+        </p>
+        <p>
+            <label for="Pincode">Pincode:</label> <input type="number" name="Pincode" id="Pincode">
+        </p>
+        <p>
+            <label for="Contact">Contact Number:</label> <input type="number" name="Contact" id="Contact" required>
+        </p>
+        <button type="submit">Submit</button>
+        <hr>
+    </form>
+  <p style="color: white; font-weight: bold; font-size: 24px;">OR</p>
+    <!-- Add Login Option -->
+    <form action="loading.html">
+        <h2>Login via Adhar </h2>
+        <p>
+            <label for="Adhar card ">Adhar card:</label>
+            <input type="text" name="Adhar card " id="Adhar card" required>
+        </p>
+      
+        <button type="submit">Login</button>
+    </form>
+
+    <script>
+        window.chatbaseConfig = {
+          chatbotId: "NzyAOomDU4KKosZpz2cMl",
+        }
+    </script>
+    <script
+        src="https://www.chatbase.co/embed.min.js"
+        id="NzyAOomDU4KKosZpz2cMl"
+        defer>
+    </script>
+</body>
+</html>
