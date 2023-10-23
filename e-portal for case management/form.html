@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="ADH.ico" type="image/x-icon">
+    <title>Online Court E-Portal</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('supreme-court-image.jpg'); /* Update with your image path */
+            background-size: cover;
+            background-attachment: fixed; /* Parallax effect */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #fff;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgb(218, 227, 247);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 600px) {
+            form {
+                padding: 10px;
+            }
+            label {
+                width: 100%;
+            }
+        }
+
+        /* Add your form styling below */
+        h1 {
+            color: #003366;
+        }
+
+        h2 {
+            color: #003366;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #003366;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea,
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #003366;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #001f4d;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #ccc;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="loading.html"> <!-- Update "loading.html" with the correct URL -->
+        <h1> Online Court E-Portal Registration</h1>
+        <h2>Contact Information</h2>
+        <label for="Name">Full Name:</label>
+        <input type="text" name="Name" id="Name" required>
+        
+        <label for="gender">Gender:</label>
+        <input type="radio" name="Gender" id="Male" required>
+        <label for="Male">Male</label>
+        <input type="radio" name="Gender" id="Female" required>
+        <label for="Female">Female</label>
+
+        <label for="Address">Address:</label>
+        <textarea name="Address" id="Address" cols="30" rows="7" required></textarea>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="Pincode">Pincode:</label>
+        <input type="number" name="Pincode" id="Pincode">
+
+        <label for="Contact">Contact Number:</label>
+        <input type="number" name="Contact" id="Contact" required>
+
+        <button type="submit">Submit</button>
+        <hr>
+    </form>
+</body>
+</html>
+
