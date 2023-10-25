@@ -253,6 +253,7 @@ footer{
   font-weight: 500;
   text-transform: capitalize;
   line-height: 3rem;
+  background-image: url("./assets/angry.png");
 }
 .footer-content p{
   max-width: 500px;
@@ -284,7 +285,10 @@ footer{
   transition: color .4s ease;
 }
 .socials a:hover i{
-  color: rgb(205, 18, 234);
+  color: rgb(212, 234, 18);
+}
+.socials li a:hover{
+  box-shadow: 1px 1px 3px 3px white;
 }
 .footer-bottom{
   display: flex;
