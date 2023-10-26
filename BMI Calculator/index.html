@@ -14,19 +14,26 @@
         * {
     font-family: Quicksand;
     font-size: 16px;
-    color: #333;
+    color: white;
+    font-weight: 800;
+}
+html{
+    background: url('bg_b.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 body {
     margin: 0;
     height: 100vh;
     padding: 0;
     border: 0;
-    background: linear-gradient(to bottom right, #F1F2B5, #eef2f3);
+    font-weight: 700;
+    /* background: linear-gradient(to bottom right, #F1F2B5, #eef2f3); */
 }
 .form {
-    background-color: #fff;
-    height: 240px;
-    width: 450px;
+    background-color: rgba(255, 255, 255, .1);
+    height: 640px;
+    width: 550px;
     border-radius: 20px;
     margin: 20px auto 20px auto;
     display: block;
@@ -52,6 +59,9 @@ body {
     border: none;
     outline: none;
     padding: 5px 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
     cursor: pointer;
 }
 .text-input:last-child {
@@ -79,22 +89,28 @@ body {
     display: inline-block;
     margin: 5px 20px 5px 8px;
 }
-.row-one {
-    padding: 30px 20px 15px 20px;
+.row-one input{
+    /* padding: 30px 20px 15px 20px; */
+    /* padding-left: 160px; */
+    margin-left: 190px;
+    align-items: center;
+    justify-content: center;
 }
 .row-two {
-    padding: 15px 20px 30px 20px;
+    padding: 15px 20px 30px 50px;
 }
 .container {
     display: inline-block;
     position: relative;
-    padding-left: 30px;
+    padding-left: 27dvh;
     cursor: pointer;
     user-select: none;
 }
 .container input {
     position: absolute;
     opacity: 0;
+    padding-left: 50px;
+    
 }
 .checkmark {
     position: absolute;
@@ -104,6 +120,8 @@ body {
     width: 25px;
     background-color: #dbeffe;
     border-radius: 50%;
+    margin-left: 185px;
+    
 }
 .container:hover input ~ .checkmark {
     background-color: #cbe7fd;
@@ -112,12 +130,7 @@ body {
     background-color: #289df6;
 }
 h1 {
-    font-size: 30px;
-    font-weight: 300;
-    text-align: center;
-    color: #289df6;
-    padding-top: 15px;
-    display: block;
+     
 }
 h2 {
     font-size: 22px;
@@ -126,14 +139,14 @@ h2 {
 }
 h3 {
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 800;
     text-align: center;
     padding: 15px;
 }
 h3 b {
     font-size: 32px;
-    font-weight: 300;
-    color: #289df6;
+    font-weight: 900;
+    color: #8fccfd;
 }
 .checkmark:after {
     content: "";
@@ -159,6 +172,8 @@ h3 b {
   <form class="form" id="form" onsubmit="return validateForm()">
   <div class="row-one">
     <input type="text" class="text-input" id="age" autocomplete="off" required/><p class="text">Age</p>
+    </div>
+    <div class="row-one">
     <label class="container">
     <input type="radio" name="radio" id="f"><p class="text">Female</p>
       <span class="checkmark"></span>

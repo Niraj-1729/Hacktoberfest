@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Preview and Latest News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('supreme-court-image.jpg'); /* Replace 'supreme-court-image.jpg' with your image file */
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: space-between; /* Align content horizontally */
+            align-items: flex-start; /* Align content to the top */
+        }
+
+        .box {
+            border: 2px solid red; /* Red outline */
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.0); /* Semi-transparent white background */
+            padding: 20px;
+            width: 20%; /* Reduce the width */
+            margin-left: auto; /* Move the box to the right */
+            margin-top: 20px; /* Add some top margin */
+        }
+
+        .news-box {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: red;
+            text-align: center;
+            text-shadow: 0 0 5px rgba(255, 0, 0, 0.7); /* Neon-like text shadow */
+        }
+
+        .news-link {
+            display: block;
+            margin-bottom: 10px;
+            color: #000;
+            text-decoration: none;
+            animation: blink 1s infinite; /* Add blinking animation */
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .video-preview {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100px;
+        }
+
+        a {
+            color: #000; /* Text color for the links */
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="news-box">
+            <h2>News</h2>
+            <a class="news-link" href="#">News Article 1</a>
+            <a class="news-link" href="#">News Article 2</a>
+            <a class="news-link" href="#">News Article 3</a>
+            <a class="news-link" href="#">News Article 4</a>
+            <a class="news-link" href="#">News Article 5</a>
+        </div>
+
+        <div class="video-preview">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_1"></iframe>
+            <p><a href="https://www.youtube.com/watch?v=VIDEO_ID_1" target="_blank">Video 1</a></p>
+        </div>
+
+        <div class="video-preview">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_2"></iframe>
+            <p><a href="https://www.youtube.com/watch?v=VIDEO_ID_2" target="_blank">Video 2</a></p>
+        </div>
+    </div>
+</body>
+</html>
+
+

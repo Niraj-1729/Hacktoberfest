@@ -1,0 +1,69 @@
+
+<html>
+<head>
+    <style>
+        .A {
+            font-size: 40px;
+            text-align: center;
+            font-weight: bold;
+            color: #090;
+            padding-bottom: 5px;
+            font-family: Times New Roman;
+        }
+
+        .B {
+            font-size: 17px;
+            font-weight: bold;
+            text-align: center;
+            font-family: Times New Roman;
+        }
+
+        h2 {
+            width: 400px;
+            background-color: orange;
+            animation-name: text;
+            animation-duration: 3s;
+        }
+
+        #one {
+            animation-fill-mode: forwards;
+        }
+
+        #two {
+            animation-fill-mode: forwards;
+        }
+
+        #three {
+            animation-fill-mode: backwards;
+            animation-delay: 2s;
+        }
+
+        #four {
+            animation-fill-mode: backwards;
+            animation-delay: 2s;
+        }
+
+        @keyframes text {
+            from {
+                margin-left: 0%;
+                background-color: #808080;
+            }
+
+            to {
+                margin-left: 60%;
+                background-color: #808080;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="A">E portal</div>
+    <div class="B"> portal  for case management</div>
+    <!-- Add links to the animated text -->
+    <h2 id="one"><a href="about.html">News</a></h2>
+    <h2 id="two"><a href="link2.html">link 2</a></h2>
+    <h2 id="three"><a href="link3.html">link 3</a></h2>
+    <h2 id="four"><a href="link4.html">link 4</a></h2>
+</body>
+</html>
